@@ -1,6 +1,6 @@
 __author__ = 'Zury'
 
-import os
+import platform, os
 import glob
 import pafy
 import pydub
@@ -9,12 +9,16 @@ from pytube import YouTube, Playlist
 
 import youtube_dl
 
-class Baixador():
-    def __init__(self):
-        pass
+class Baixador:
+    so = platform.system() 
+    if so == 'Windows':
+        os.system('cls')
+    elif so == 'Linux':
+            os.system('clear')
+    else:
+        print('Não foi possível detectar seu sistema operacional')
     
     def laucher(self):
-        os.system('clear')
         print('''
             Escolha a baixo com opção deseja usar:
             
@@ -29,7 +33,7 @@ class Baixador():
             if op == 1:
                 url_video = input('URL: ')
                 yt = YouTube(url_video)
-                print(f'VÍDEO ESTÁ SENDO BAIXADO!\n{yt.title}')
+                print('VÍDEO ESTÁ SENDO BAIXADO!\n %s' %(yt.title))
                 video = yt.streams.first()
                 video.download()
 
