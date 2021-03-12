@@ -17,7 +17,7 @@ Laucher music, video and playlist downloader
         </p>
     </article>
     
-    <h1>Clone repository</h1>
+   Clone repository
    
    ```
    git clone https://github.com/VL0511/-Laucher-music-video-and-playlist-downloader.git
