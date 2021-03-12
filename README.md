@@ -1,5 +1,5 @@
 <h1 style="text-align:center;">
-BAIXADOR DE MÚSICAS, VÍDEOS E PLAYLIST EM PYTHON
+Laucher music, video and playlist downloader
 </h1>
 
 <center>
