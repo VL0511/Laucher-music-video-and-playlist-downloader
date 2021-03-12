@@ -3,7 +3,7 @@ BAIXADOR DE MÚSICAS, VÍDEOS E PLAYLIST EM PYTHON
 </h1>
 
 <center>
-<img src="./img/logo.png" height="250" width="250" style="border-radius:4px;">
+<img src="./img/logo.png" height="250" width="250" style="border-radius:4px; margin-left: 50px;">
 </center>
 
 <div class="container">
