@@ -2,10 +2,6 @@
 Laucher music, video and playlist downloader
 </h1>
 
-<center>
-<img src="./img/logo.png" height="250" width="250" style="border-radius:4px; margin-left: 50px;">
-</center>
-
 <div class="container">
     <p style="font-size: 16px;">
         To use laucher, you have installed python and some requirements to run the program, laucher supports: <strong> Windows and Linux</strong>.
