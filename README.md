@@ -21,5 +21,7 @@ Laucher music, video and playlist downloader
         </p>
     </article>
    
-
+   ```
+   git clone https://github.com/VL0511/-Laucher-music-video-and-playlist-downloader.git
+   ``` 
 </div>
