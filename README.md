@@ -13,12 +13,13 @@ Laucher music, video and playlist downloader
     <p style="font-size:16px;">
         O laucher no momento só atende de baixar conteúdo apenas da plataforma Youtube em futuras atualizações terá disponibilidade para baixar de diversas plataformas. 
     </p>
-    <h2>Instalação</h2>
+    <h2>Installation</h2>
     <hr>
     <article>
         <p style="font-size:16px;">
             pip install requirements.txt ou pip3 install requirements.txt 
         </p>
     </article>
+   
 
 </div>
