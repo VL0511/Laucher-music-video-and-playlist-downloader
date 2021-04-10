@@ -10,7 +10,6 @@ from pytube import YouTube, Playlist
 import youtube_dl
 
 class Baixador:
-<<<<<<< HEAD
     def __init__(self, name, age):
       self.url= input('[*]URL: ')
       self.os_system = platform.system()
@@ -22,16 +21,7 @@ class Baixador:
             os.system('clear')
         else:
             print('Não foi possível detectar seu sistema operacional')
-=======
-    so = platform.system() 
-    if so == 'Windows':
-        os.system('cls')
-    elif so == 'Linux':
-            os.system('clear')
-    else:
-        print('Não foi possível detectar seu sistema operacional')
->>>>>>> c14f5a9621e9774a72879d8be739ed17b60c0177
-    
+
     def laucher(self):
         print('''
             Escolha a baixo com opção deseja usar:
