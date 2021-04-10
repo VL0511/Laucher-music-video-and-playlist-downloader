@@ -1,6 +1,6 @@
 __author__ = 'Zury'
 
-import os
+import platform, os
 import glob
 import pafy
 import pydub
@@ -9,12 +9,20 @@ from pytube import YouTube, Playlist
 
 import youtube_dl
 
-class Baixador():
-    def __init__(self):
-        pass
+class Baixador:
+    def __init__(self, name, age):
+      self.url= input('[*]URL: ')
+      self.os_system = platform.system()
+      
+    def clear(self):      
+        if os_system == 'Windows':
+            os.system('cls')
+        elif os_system == 'Linux':
+            os.system('clear')
+        else:
+            print('Não foi possível detectar seu sistema operacional')
     
     def laucher(self):
-        os.system('clear')
         print('''
             Escolha a baixo com opção deseja usar:
             
@@ -27,9 +35,8 @@ class Baixador():
         
         while True:
             if op == 1:
-                url_video = input('URL: ')
-                yt = YouTube(url_video)
-                print(f'VÍDEO ESTÁ SENDO BAIXADO!\n{yt.title}')
+                yt = YouTube(self.url)
+                print('VÍDEO ESTÁ SENDO BAIXADO!\n %s' %(yt.title))
                 video = yt.streams.first()
                 video.download()
 
@@ -42,9 +49,8 @@ class Baixador():
                         'preferredquality': 192
                     }]
                 }
-                url_musica = input('URL: ')
 
-                music = pafy.new(url_musica)
+                music = pafy.new(self.url)
                 audiostreams = music.audiostreams
                 
                 for i in audiostreams:
@@ -61,9 +67,7 @@ class Baixador():
                     mp4.audio.write_audiofile(os.path.join(name_mp3))
                     
             elif op == 3:
-                url_playlist_video = input('URL: ')
-                
-                pl = Playlist(url_playlist_video)
+                pl = Playlist(self.url)
                 i = 1
                 
                 print('INICIANDO DOWNLOAD!')
@@ -74,9 +78,12 @@ class Baixador():
                         print('Iniciando Download: '+ str(i) + ": " + str(title))
                     except:
                         pass
+            else:
+                print('Opção não encotrada!')
                 
 try:
     baixador = Baixador()
+    baixador.clear()
     baixador.laucher()
 except Exception as e:
     print(f'Error: {e}')
