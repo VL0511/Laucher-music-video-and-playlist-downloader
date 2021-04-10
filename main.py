@@ -10,6 +10,7 @@ from pytube import YouTube, Playlist
 import youtube_dl
 
 class Baixador:
+<<<<<<< HEAD
     def __init__(self, name, age):
       self.url= input('[*]URL: ')
       self.os_system = platform.system()
@@ -21,6 +22,15 @@ class Baixador:
             os.system('clear')
         else:
             print('Não foi possível detectar seu sistema operacional')
+=======
+    so = platform.system() 
+    if so == 'Windows':
+        os.system('cls')
+    elif so == 'Linux':
+            os.system('clear')
+    else:
+        print('Não foi possível detectar seu sistema operacional')
+>>>>>>> c14f5a9621e9774a72879d8be739ed17b60c0177
     
     def laucher(self):
         print('''
@@ -35,7 +45,12 @@ class Baixador:
         
         while True:
             if op == 1:
+<<<<<<< HEAD
                 yt = YouTube(self.url)
+=======
+                url_video = input('URL: ')
+                yt = YouTube(url_video)
+>>>>>>> c14f5a9621e9774a72879d8be739ed17b60c0177
                 print('VÍDEO ESTÁ SENDO BAIXADO!\n %s' %(yt.title))
                 video = yt.streams.first()
                 video.download()
