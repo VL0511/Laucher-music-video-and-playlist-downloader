@@ -35,12 +35,9 @@ class Baixador:
         
         while True:
             if op == 1:
-<<<<<<< HEAD
                 yt = YouTube(self.url)
-=======
                 url_video = input('URL: ')
                 yt = YouTube(url_video)
->>>>>>> c14f5a9621e9774a72879d8be739ed17b60c0177
                 print('VÍDEO ESTÁ SENDO BAIXADO!\n %s' %(yt.title))
                 video = yt.streams.first()
                 video.download()
