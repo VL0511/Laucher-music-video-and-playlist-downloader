@@ -10,7 +10,7 @@ from pytube import YouTube, Playlist
 import youtube_dl
 
 class Baixador:
-    def __init__(self, name, age):
+    def __init__(self):
       self.url= input('[*]URL: ')
       self.os_system = platform.system()
       
